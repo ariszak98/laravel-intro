@@ -21,7 +21,7 @@
             <a href="/contact">Contact</a>
         </nav>
        
-        {{ $slot }}
+        {{ $slot }} 
 
     </body>
 </html>
