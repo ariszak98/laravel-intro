@@ -1,0 +1,7 @@
+1. composer create-project laravel/laravel .
+    Creates a new laravel project on the current directory
+
+2. php artisan serve (--port=8001)
+    starts a new server on "localhost:(8000)" for the current laravel project
+
+3. 
