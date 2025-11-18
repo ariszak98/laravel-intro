@@ -4,4 +4,15 @@
 2. php artisan serve (--port=8001)
     starts a new server on "localhost:(8000)" for the current laravel project
 
-3. 
+3. Git Commands
+
+    1. git add .
+        Tells Git which files you want to "save" to next snapshot. "." means all of them
+
+    2. git commit -m "your message"
+        Creates a snapshot of the project at the moment
+
+    3. git push
+        Sends saved commits to Github
+
+4. 
