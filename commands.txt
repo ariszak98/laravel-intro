@@ -24,4 +24,13 @@
 6. php artisan migrate:rollback
     Rollback the latest database migrations
 
-7. 
+7. php artisan make:migration
+    Creates a new migration
+
+8. php artisan migrate:fresh
+    Drop all tables and re-run all migrations
+
+9. php artisan tinker
+    Starts a "test PHP" session on terminal. 
+
+10. 
