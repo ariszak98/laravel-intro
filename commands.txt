@@ -15,4 +15,13 @@
     3. git push
         Sends saved commits to Github
 
-4. 
+4. php artisan db:show
+    Displays info about the current DB status
+
+5. php artisan migrate:refresh
+    Reset and re-run all migrations
+
+6. php artisan migrate:rollback
+    Rollback the latest database migrations
+
+7. 
