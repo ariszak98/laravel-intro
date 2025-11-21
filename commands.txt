@@ -33,4 +33,7 @@
 9. php artisan tinker
     Starts a "test PHP" session on terminal. 
 
-10. 
+10. php artisan make:factory factory_name (-m corresponding model name)
+    Creates a Factory with the given name
+
+11. 
