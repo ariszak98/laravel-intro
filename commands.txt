@@ -39,4 +39,16 @@
 11. php artisan vendor:publish
     Takes all Views from vendors and copies them to our own View file under "resources/views/vendor"
 
-12. 
+12. php artisan db:seed
+    Seed the Database with records
+
+13. php artisan migrate:fresh --seed
+    Does a migrate:fresh and then Seeds the Database
+
+14. php artisan make:seeder <seeder_name>
+    Creates a new seeder
+
+15. php artisan db:seed --class=seeder_name
+    Seeds the Database using only the specified seeder
+
+16. 
