@@ -36,4 +36,7 @@
 10. php artisan make:factory factory_name (-m corresponding model name)
     Creates a Factory with the given name
 
-11. 
+11. php artisan vendor:publish
+    Takes all Views from vendors and copies them to our own View file under "resources/views/vendor"
+
+12. 
