@@ -1,5 +1,9 @@
 <x-layout>
 
+    <x-slot:title>
+        Job
+    </x-slot:title>
+
     <x-slot:heading>
         {{ $job['title'] }}
     </x-slot:heading>

@@ -1,5 +1,9 @@
 <x-layout>
 
+    <x-slot:title>
+        Available Jobs
+    </x-slot:title>
+
     <x-slot:heading>
         Job Listings
     </x-slot:heading>
