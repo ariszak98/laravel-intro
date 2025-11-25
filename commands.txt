@@ -51,4 +51,8 @@
 15. php artisan db:seed --class=seeder_name
     Seeds the Database using only the specified seeder
 
-16. 
+16. php artisan route:list
+    It lists all available Routes
+
+17. php artisan route:list --except-vendor
+    It lists all available Routes except those from vendors
