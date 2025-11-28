@@ -76,7 +76,7 @@
         <x-form-field>
           <x-form-label for="password_confirmation">Password Confirmation</x-form-label>
           <div class="mt-2">
-            <x-form-input type="password_confirmation" required placeholder="Your Password" name="password_confirmation" id="password_confirmation"></x-form-input>
+            <x-form-input type="password" required placeholder="Your Password" name="password_confirmation" id="password_confirmation"></x-form-input>
             <x-form-error name="password_confirmation" />
           </div>
         </x-form-field>
@@ -104,7 +104,9 @@
   </div>
 
   <div class="mt-6 flex items-center justify-end gap-x-6">
-    <button type="button" class="text-sm/6 font-semibold text-gray-900">Cancel</button>
+    <div>
+        <a href="/" type="button" class="text-sm/6 font-semibold text-gray-900">Cancel</a>
+    </div>
     <x-form-button>Register</x-form-button>
   </div>
 </form>

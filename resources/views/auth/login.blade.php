@@ -22,7 +22,7 @@
         <x-form-field>
           <x-form-label for="email">Email</x-form-label>
           <div class="mt-2">
-            <x-form-input required placeholder="doe@mail.com" name="email" id="email"></x-form-input>
+            <x-form-input :value="old('email')" required placeholder="doe@mail.com" name="email" id="email"></x-form-input>
             <x-form-error name="email" />
           </div>
         </x-form-field>
@@ -65,7 +65,9 @@
   </div>
 
   <div class="mt-6 flex items-center justify-end gap-x-6">
-    <button type="button" class="text-sm/6 font-semibold text-gray-900">Cancel</button>
+    <div>
+        <a href="/" type="button" class="text-sm/6 font-semibold text-gray-900">Cancel</a>
+    </div>
     <x-form-button>Login</x-form-button>
   </div>
 </form>
