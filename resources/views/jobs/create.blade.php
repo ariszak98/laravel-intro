@@ -19,36 +19,30 @@
       <p class="mt-1 text-sm/6 text-gray-600">We just need a handful of details.</p>
 
       <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-        <div class="sm:col-span-4">
-          <label for="username" class="block text-sm/6 font-medium text-gray-900">Title</label>
+        
+        <x-form-field>
+          <x-form-label for="title">Title</x-form-label>
           <div class="mt-2">
-            <div class="flex items-center rounded-md bg-white pl-3 outline-1 -outline-offset-1 outline-gray-300 focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-indigo-600">
-              <div class="shrink-0 text-base text-gray-500 select-none sm:text-sm/6"></div>
-              <input required id="title" type="text" name="title" placeholder="" class="block min-w-0 grow bg-white py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6" />
-            </div>
-
-            @error('title')
-                    <p class="mt-1 text-sm text-red-500">{{ $message }}</p>
-            @enderror
-            
+            <x-form-input required placeholder="CEO" name="title" id="title"></x-form-input>
+            <x-form-error name="title" />
           </div>
-        </div>
+        </x-form-field>
+
+
       </div>
 
       <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
         <div class="sm:col-span-4">
-          <label for="username" class="block text-sm/6 font-medium text-gray-900">Salary</label>
-          <div class="mt-2">
-            <div class="flex items-center rounded-md bg-white pl-3 outline-1 -outline-offset-1 outline-gray-300 focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-indigo-600">
-              <div class="shrink-0 text-base text-gray-500 select-none sm:text-sm/6"></div>
-              <input required id="salary" type="text" name="salary" placeholder="" class="block min-w-0 grow bg-white py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6" />
-            </div>
 
-            @error('salary')
-                    <p class="mt-1 text-sm text-red-500">{{ $message }}</p>
-            @enderror
-            
-          </div>
+          <x-form-field>
+            <x-form-label for="salary">Salary</x-form-label>
+            <div class="mt-2">
+              <x-form-input required placeholder="$100,000" name="salary" id="salary"></x-form-input>
+              <x-form-error name="salary" />
+            </div>
+          </x-form-field>
+
+          
         </div>
       </div>
 
@@ -73,7 +67,7 @@
 
   <div class="mt-6 flex items-center justify-end gap-x-6">
     <button type="button" class="text-sm/6 font-semibold text-gray-900">Cancel</button>
-    <button type="submit" class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Save</button>
+    <x-form-button>Save</x-form-button>
   </div>
 </form>
 

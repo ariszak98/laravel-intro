@@ -56,3 +56,14 @@
 
 17. php artisan route:list --except-vendor
     It lists all available Routes except those from vendors
+
+18. composer require laravel/breeze --dev
+Installs Laravel Breeze on the current directory
+
+19. php artisan breeze:install
+Installs the Stack Blade + Alpine
+
+20. npm install && npm run dev
+Installing JS Dependancies && firing up the node server
+
+21. 
