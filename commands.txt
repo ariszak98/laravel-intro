@@ -66,4 +66,7 @@ Installs the Stack Blade + Alpine
 20. npm install && npm run dev
 Installing JS Dependancies && firing up the node server
 
-21. 
+21. php artisan make:policy <policy_name>
+    Creates a Policy with the given name
+
+22. 
