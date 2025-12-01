@@ -1,0 +1,5 @@
+<h2>{{ $job->title }}</h2>
+
+<p>Congruts your job is now live on our website!!!</p>
+
+<p><a href="{{ url('/jobs/' . $job->id) }}">View your Job!</a></p>
