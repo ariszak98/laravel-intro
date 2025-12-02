@@ -72,4 +72,10 @@ Installing JS Dependancies && firing up the node server
 22. php artisan make:mail <mail_name>
     Creates a new Mailable with the given name
 
-23. 
+23. php artisan queue:work
+    Starts processing Jobs on the Queue as a Daemon
+
+24. php artisan make:job <job_name>
+    Creates a new Job class
+
+25. 
